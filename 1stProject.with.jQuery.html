@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap Stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="project-with-jQuery.css">
+<link href="dist/pattern.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+<!--google fonts-->
+<!-- Serif Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+
+<!-- Cartoon Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<!-- Hand Writing Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Liu+Jian+Mao+Cao&family=Reenie+Beanie&family=Rock+Salt&display=swap" rel="stylesheet">
+<!--html doc start-->
+</header>
+
+<body>
+
+<section id="navbar-section">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="navbar-container container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#home-section"><img class="navbar-icon" src="https://iconape.com/wp-content/files/ts/322815/png/322815.png" alt="Leeds retro badge">LUFC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#home-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#headlines-section">News</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#fixtures-and-tickets-section">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#kits-section">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="https://video.leedsunited.com/home">LUTV</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#foundation">Foundation</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#club">Club</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#women">Women</a></li> 
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#history">History</a></li>
+    
+                </ul>
+                <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-bg btn-outline-dark" type="submit">Search</button>
+          </form> -->
+            </div>
+        </div> 
+ </div>
+</nav>
+<!-- 
+</section>
+<section id="home-section">
+    <div class="home">
+        <div class="row news-and-img-wrapper">
+            <div class="col-xxl-6 news-container container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="news-wrapper-column col-lg-6 col-md-6">
+                        <div class="news-wrapper">
+                            <img class="leeds-badge-hidden" src="https://iconape.com/wp-content/files/ts/322815/png/322815.png" alt="Leeds retro badge">
+                            <p class="news">News</p>
+                            <h3 class="bamford-title">Bamford recieves his first England call-up! </h3>
+                            <p class="bamford-callup">The Football community reacts to Patrick's England call up. As news filtered out that Patrick Bamford had become the latest Leeds United player to join up with England, the footballing community gave their reactions to the announcement.
+                                Gareth Southgate, England Head Coach:
+                                "There was an opportunity for us in the forward areas, and now it's opportunity for Patrick as a number 9 as well.
+                                His progress with Leeds has been excellent, he was very close at the end of last season with us [before Euro 2020] and this is a very good chance for him to come back in, after having worked with him at U21 level.
+                                It's a fabulous moment for him and his family."
+                                Victor Orta, Leeds United Director of Football:
+                                "Today is a proud day for Patrick and his family and they deserve this.
+                                I first worked with Patrick when we signed him permanently, whilst I worked at Middlesborough, and I’ve always been struck by what a good person he is, as well as a top player.
+                                Under Marcelo he has developed magnificently and I’m delighted that Gareth has rewarded his efforts with a call up to join Kalvin in the National team. More success is to come, I am sure."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 news-article-wrapper">
+                        <div class="analyist-div">
+                            <a href="https://www.theanalyst.com/na/2022/02/leeds-vs-man-utd-in-viz/"><img class="the-analyist" src="https://theanalyst.com/wp-content/uploads/2022/02/leeds-man-utd-rivalry.jpg" alt="The Anaylist's article: Manchester United  Vs Leeds United through time."></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 vid-container">        
+                        <iframe class="vid" src="https://www.youtube.com/embed/tQX0jpsyTIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>   
+                    <div class="col-lg-6 col-md-6 preview-wrapper">
+                        <a class="preview" href="#next-game-text">Match Preview:<h1 class="liverpool">Liverpool</h1></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-6 head-img-container container-fluid">
+                <a href="#analysis-section"><div class="home-img-wrapper">
+                    <h1 class="home-img-text">Match Report</h1><img class="home-img" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/02/20/16453695304404.jpg" alt="Manchester United vs Leeds United">
+                </div></a>
+            </div>
+
+            <div class="cross"><i class="fas fa-times"></i></div>
+        </div>
+    
+    </div>
+</section> -->
+
+<section id="home-section">
+    <div class="container py-4">
+        <div class="p-5 mb-4 rounded-3 jumbotron-lg">
+          <div class="container-fluid py-5">
+            <div class="row">
+            <div class="col-lg-7">
+                <h1 class="display-5 fw-bold heading">This is Leeds United.</h1>
+                <p class="col-md-8 sub-heading">Different By Design. In partnership with Adidas, Leeds United are proud to reveal the new home and away kits for this season. Take a look in the Leeds United Store, on sale now.</p>
+                <button class="btn btn-dark btn-lg heading-btn" type="button">Let's go!</button>
+            </div>
+            <div class="container-fluid vid-container col-lg-5">           
+                <iframe class="vid" height="220" width="400" src="https://www.youtube.com/embed/tQX0jpsyTIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h2>Latest Headlines</h2>
+              <p>All Leeds Aren't We? Stay up to date with the action. Follow the link below to see the latest headlines and Leeds United news. </p>
+              <button class="btn btn-outline-light headlines-btn" type="button">Let's go!</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3 jumbotron-md">
+              <h2 class="heading-md">Bamford recieves first England call-up! </h2>
+              <p>Click the link below to see the full report as we get the thoughts of Gareth Southgate, the England manager and Patrick Bamford himself.</p>
+              <button class="btn btn-outline-dark callup-btn" type="button">Let's go!</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="headlines-section">
+            <div class="headlines-container row">
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img ladies" src="/Images/bartup_banner.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">Watch Leeds United Ladies</h3>
+                        <p>See highlights of the Durham Ladies (Away).</p>
+                    </div>
+                </div>
+
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img" src="/Images/raph-edit4.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">Watch: Post-Match Interview</h3>
+                        <p>Marcelo Bielsa speaks following the game.</p>
+                    </div>
+                </div>
+
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img" src="/Images/raph-edit2.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">Player Reaction</h4>
+                        <p>Patrick Bamford speaks after the game.</p>
+                    </div>
+                </div>
+
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img" src="/Images/match-preview.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">The Match Preview</h4>
+                        <p>We preview the upcoming game against Liverpool.</p>
+                    </div>
+                </div>
+
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img" src="/Images/news.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">Latest Leeds United News</h4>
+                        <p>Looking at the latest news in Leeds.</p>
+                    </div>
+                </div>
+
+                <div class="headlines col-lg-4 col-md-6">
+                    <img class="head-img" src="/Images/match-report.jpg">
+                    <div class="container-fluid headline-text-container">
+                        <h4 class="headline-header-text">The Match Report</h4>
+                        <p>We report on the Manchester United match.</p>
+                    </div>
+                </div>
+            </div>     
+        </section>
+
+
+
+<section id="analysis-section">
+<div class="background2">        
+    <img class="fullPgImgs" src="https://cdn.theathletic.com/app/uploads/2022/02/17125319/leeds_man_u_v1_copy-scaled.jpg">
+    <div class="scores">
+            <div class="last-match-text">
+                <h3>Match Report</h3>
+                <br>
+                <p>Sunday, 20th Februrary 2022, Elland Road (Home)</p>
+                <br>
+                <p>Leeds United 2 - 4 Manchester United</p>
+                <hr>
+                <br>
+                <p>It was also a result that, once again, left Leeds looking over their shoulder, worrying about relegation – which Bielsa must avoid if he 
+                    is to leave this summer – and yet more injuries as they lost Robin Koch to what appeared to be a concussion. Worryingly, he was allowed 
+                    to carry on, after cutting his head, before groggily departing.
+                    It was as they reorganised having lost Koch that Leeds conceded with Maguire powering home a header from a Luke Shaw corner. His marker, 
+                    Diego Llorente, did not even get close to stopping Maguire, who claimed his first league goal of the season and, unwisely, knee-slid towards 
+                    the Leeds fans. Bruno Fernandes picked up an object and tossed it away. Fernandes was then collecting a goal of his own. Deep into added time Victor Lindelof 
+                    broke from deep in his own half and exchanged passes with Jadon Sancho, before pushing the ball wide to the winger, who chipped a cross for 
+                    Fernandes to easily head home. In reality it could have been over by that point as Cristiano Ronaldo had already fluffed a close-range chance 
+                    after clever work by Paul Pogba, who was dominant during that period. But Illan Meslier saved on his goal-line.
+                    Leeds regrouped and the second half was all about the substitutions.
+                </p>
+            </div>
+            <div class="part2">
+                <p> First, the home side’s replacements, Joe Gelhardt and Raphinha, who surprisingly started on the bench, made the difference.
+                    And so, after Meslier again thwarted Ronaldo, Leeds struck. And then struck again. The first was a fluke; the second owed 
+                    everything to tenacity and desire – and a correct Var check. Rodrigo was released by Firpo down the left and looked to pick out Raphinha only 
+                    to overhit his cross which swirled over David de Gea into the net. The goalkeeper, such a saviour for United this season, was at fault.
+                    The energy charge propelled Leeds forward with Adam Forshaw snapping at Fernandes, winning the ball and Daniel James arcing an inviting low cross 
+                    which was met by the sliding Raphinha who bundled it in. United, with Ronaldo booked for dissent, furiously claimed Fernandes was fouled but 
+                    Forshaw cleanly won possession and the goal rightly stood.
+                    It appeared Leeds would complete an astonishing turnaround when James met Firpo’s cross only to fail to get any purchase on his diving header. 
+                    The ball squirted wide.
+                    It proved costly. Fred, who had only just come on, fed the ball to Sancho and then ran around his team-mate to receive the return pass before 
+                    hammering an angled left-foot shot between Meslier and the near post.
+                    As Leeds tried to reply, United struck to end any doubt as Fernandes skilfully lifted the ball over Pascal Struijk and slipped a pass through 
+                    to Elanga, who side-footed home. A rare moment of calm in the storm.
+                </p> 
+            </div>
+        </div>
+
+        <img class="fullPgImgs" src="https://image.discovery.indazn.com/eu/v2/eu/image/?id=956486213321_image-header_pEs_1644496506000">
+        <div class="scores">
+            <div id="next-game-text">
+                <h3>Match Preview</h3>
+                <br>
+                <p>Wednesday, 24th Februrary 2022 Liverpool, Anfield (Away)</p>
+                <hr>
+                <br>
+                <p>Leeds United travel to the Premier League’s in-form side on Wednesday evening, as they take on Liverpool at Anfield.
+                    The Reds currently sit in second position in the standings and have won their last five on the bounce in the league, whilst Leeds have just 
+                    the one win in that same period of games. Liverpool’s win last time out against Norwich City on home turf was hard-fought. Jurgen Klopp’s 
+                    outfit were a goal behind with just under 30 minutes remaining, but turned on the style to run out comfortable winners in the end and in 
+                    doing so, moved within six points of top spot. The Whites were involved in a match full of goals on Sunday, which ultimately went against them. 
+                    After being two goals down at the interval against Manchester United, Rodrigo and Raphinha netted inside a minute of each other to bring the game 
+                    level. However, the away side scored twice more to take the points. When the two teams met last season, the outcomes and matches themselves 
+                    were very close. The opening day of the 2020/21 campaign saw Leeds lose a thrilling 4-3 encounter, whilst Elland Road hosted another 
+                    hard-fought match, ending in a 1-1 draw between the two teams. </p>
+            </div>
+            <div class="part2">
+                <p>Wednesday’s fixture is expected to be another high-energy match full of exciting football and more than likely, goals. The two teams have 
+                    attack-minded styles and there is no doubt they will each be aiming to take three points. Raphinha scored his ninth goal of the season at the weekend, which puts him joint fourth in the Premier League’s top-scorers list up to now. 
+                    The top two in the standings both play for the hosts, with Mo Salah having another impressive season with 17, whilst Diogo Jota has 12 to his 
+                    name. Showing their attacking intent and further threats, Liverpool also occupy the top three slots in the assists chart. Trent 
+                    Alexander-Arnold has 10, whilst Salah is on nine, backed up by Andy Robertson on eight. For Leeds, there is no stand-out leader on assists, 
+                    but most of the squad have registered on the list. As always, points will mean movement in the standings if Bielsa’s side come away with them. 
+                    Leeds are five points ahead of 18th placed Watford, but just three behind 13th placed Crystal Palace in a congested ongoing battle. The home 
+                    side have the possibility of edging even closer to Manchester City at the top with a victory, which would be perfect timing before  
+                    another huge game coming up at the weekend. Liverpool will be at Wembley on Sunday in the Carabao Cup final, against Chelsea. </p>
+            </div>
+        </div>
+       
+    </div>
+</div>
+</section>
+
+<section id="kits-section">
+<div id="kits-background">
+    <div class="kits">
+        <div class="background-pattern">
+            <h2 class="pattern-checks-sm bg-mint white text-pattern kits-title"> 2021/2022 Leeds United Home/Away Kits.</h2>
+            <button class="btn btn-dark available-now">Available Now</button>
+            <button class="btn btn-outline-dark shop-btn" href="https://shop.leedsunited.com/kit/home-kit-21-22" target="_blank" >Shop Here</button>
+        </div>
+        <div class="grid-kits">
+            <img id="home-kit" src="https://dc6vmiz8c91pk.cloudfront.net/media/143/80074918124471/home_kit_article_1.jpg" alt="Leeds United home kit 2021/22 Jack Harrison">
+            <img id="home-kit2" src="https://res.feednews.com/assets/v2/69a9455cb37da84bc2d05092383a49b3?width=1280&height=720&quality=hq&category=us_News_Sports.Soccer" alt="Leeds United home kit 2021/22 Raphinha">
+            <img id="away-kit2" src="https://www.footballshirtculture.com/images/stories/leeds-united-2021-2022-away-kit/leeds_united_2021_2022_away_kit_a.jpeg" alt="Leeds United away kit 2021/22">
+            <img id="KP" src="https://i2-prod.leeds-live.co.uk/sport/leeds-united/article20942483.ece/ALTERNATES/s1200/0_Training-2122.png" alt="Kalvin Phillips">
+        </div>
+        <img id="away-kit" src="https://www.footballshirtculture.com/images/stories/leeds-united-2021-2022-away-kit/leeds_united_2021_2022_away_kit_d.jpeg" alt="Leeds United away kit 2021/22 Patrick Bamford">
+    </div>
+</div>
+</section>
+
+<section id="fixtures-and-tickets-section">
+    <div class="row">
+        <div class="col-xxl-4 col-lg-4 col-md-4">
+            <div class="row">
+                <div class="col-xxl-12 col-lg-12 col-md-12 check check-1">
+                    <img class="fixtures-img" src="/Images/volley-edit.jpg">
+                </div>
+
+                <div class="col-xxl-12 col-lg-12 col-md-12 check check-2">
+                    <h1 class="u23-title">U23's</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="img-fluid col-xxl-5 col-lg-5 col-md-5 check-lg">
+            <img class="upcoming-games-img" src="Images/upcoming-games.jpg">
+        </div>
+    
+        <div class="col-xxl-3 col-lg-3 col-md-3">
+            <div class="row">
+                <ul class="list-group col-lg-12">
+                    <li class="list-group-item list-group-item-light">Next 5</li>
+                    <li class="list-group-item">Liverpool (A) 28th Match</li>
+                    <li class="list-group-item">Tottenham (H) 2nd Februrary</li>
+                    <li class="list-group-item">Leicester (A) 12th Februrary</li>
+                    <li class="list-group-item">Aston Villa (H) 20th Februrary</li>
+                    <li class="list-group-item">Norwich (H) 12th March</li>
+                </ul>  
+                <div class="col-lg-12">
+                    <div class="row row-cols-1">
+                        <a class="tickets-link" href="https://www.lufc.talent-sport.co.uk/PagesPublic/Home/home.aspx"><button class="col-lg-12 btn btn-dark buy-tickets-btn tix-btn">Buy Tickets</button></a>
+                        <a class="tickets-link" href="https://www.leedsunited.com/tickets/fixtures"><button class="col-lg-12 btn btn-outline-dark ticket-news-btn tix-btn">Tickets News</button></a>
+                        <div class="sq-container">
+                        <div class="sq"><h3 class="tickets-onsale-title">Full fixture list here.</h3></div></div>
+                    </div>
+                </div>                
+            </div>
+    </div>
+</div>      
+</section>
+
+<section id="team-section"> 
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-6 player-card player-card1">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">1</strong>
+              <h3 class="mb-0">Illian Meslier</h3>
+              <div class="mb-1 text-muted">GK</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="https://en.wikipedia.org/wiki/Illan_Meslier" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img width="190" height="255" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/51201838735915/meslier.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+    
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 player-card player-card2">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">2</strong>
+              <h3 class="mb-0">Luke Ayling</h3>
+              <div class="mb-1 text-muted">RB</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="https://en.wikipedia.org/wiki/Luke_Ayling" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img width="190" height="255" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/17551046036176/ayling.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+   
+   
+  
+
+    <!-- <div class="players-container container-fluid">
+        <div id="players-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Illan_Meslier">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/51201838735915/meslier.png" alt="Meslier">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">1</h5>
+                            <p class="player-text-small">Illian Meslier</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Luke_Ayling">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/17551046036176/ayling.png" alt="Ayling">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">2</h5>
+                            <p class="player-text-small">Luke Ayling</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Junior_Firpo">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/08581646256358/firpo.png" alt="Firpo">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">3</h5>
+                        <p class="player-text-small">Junior Firpo</p>
+                        <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Robin_Koch">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/35872855804914/koch.png" alt="Koch">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">5</h5>
+                            <p class="player-text-small"> Robin Koch</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Liam_Cooper">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/30825074130380/cooper.png" alt="Cooper">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">6</h5>
+                            <p class="player-text-small">Liam Cooper</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Diego_Llorente">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/74769581086830/llorente.png" alt="Llorente-right">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">14</h5>
+                            <p class="player-text-small">Diego Llorente</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Stuart_Dallas">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/01924331870547/dallas.png" alt="Dallas">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">15</h5>
+                            <p class="player-text-small">Stuart Dallas</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Pascal_Struijk">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/24304799863716/struijk.png" alt="Struijk">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">21</h5>
+                            <p class="player-text-small">Pascal Struijk</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Adam_Forshaw">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/82644460286160/forshaw.png" alt="Forshaw">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">4</h5>
+                            <p class="player-text-small">Adam Forshaw</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Raphinha_(footballer,_born_1996)">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/22515689729152/raphinha.png" alt="Raphinha">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">10</h5>
+                            <p class="player-text-small">Raphinha</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link"href="https://en.wikipedia.org/wiki/Jack_Harrison_(footballer,_born_1996)">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/39707342840800/harrison.png" alt="Harrison">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">22</h5>
+                            <p class="player-text-small">Jack Harrison</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Kalvin_Phillips">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/50158625420250/phillips.png" alt="Phillips">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">23</h5>
+                            <p class="player-text-small">Kalvin Phillips</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Mateusz_Klich">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/34440316246016/klich.png" alt="Klich">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">43</h5>
+                            <p class="player-text-small">Mateusz Klich</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Jamie_Shackleton">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/84778185592219/shackleton.png" alt="Shackleton">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">46</h5>
+                            <p class="player-text-small">Jamie Shackleton</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Patrick_Bamford">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/37856546029744/bamford.png" alt="Bamford">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">9</h5>
+                            <p class="player-text-small">Patrick Bamford</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Tyler_Roberts">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/72915815008396/roberts.png" alt="Roberts">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">11</h5>
+                            <p class="player-text-small">Tyler Roberts</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">            
+                    <div class="item">
+                        <a class="player-link" href="https://en.wikipedia.org/wiki/Rodrigo_(footballer,_born_1991)">
+                            <img class="player-profile" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/42225176959036/rodrigo.png" alt="Rodrigo">
+                        </a>
+                        <div class="player-container">
+                            <h5 class="player-number">19</h5>
+                            <p class="player-text-small">Rodrigo Moreno</p>
+                            <p class="player-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#players-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#players-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div> -->
+</section>
+
+
+<section id="newsletter-section">
+    <div class="newsletter-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="newsletter-img" src="Images/Jack-Harrison.jpg">
+            </div>
+            <div class="col-lg-6 newsletter-text-wrapper">
+                <h1 class="newsletter-title"><a href="" target="_blank" class="newsletter"> LUFC Newsletter</a></h1>
+                <p class="newsletter-text">Join the Leeds United Mailing List and receive the latest news from inside Elland Road! Just enter your email address here.</p>
+                <div class="email-wrapper">
+                    <input type="email" id="email" class="email-submit" placeholder="me@email.com">
+                    <button class="email-submit-button btn btn-bg btn-dark" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="1stProject-withjQuery.js"></script>
+</body>
+</html>
+
