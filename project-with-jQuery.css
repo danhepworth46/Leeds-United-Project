@@ -473,7 +473,7 @@ display: flex;
 .fixtures-header{
     color: white;
     margin-bottom: 0;    
-    background-color: #212529;  
+    border: 1px solid #dee2e6; 
     height: 100%;
     border-radius: 5px;    
     min-width: 200px;
@@ -485,13 +485,13 @@ display: flex;
 .fixtures-header:hover{
     transform: scale(1.01);
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
+    border: none;
 }
 
 .fixtures-header-img{
-    color: white;
+    color: #212529;
     margin-bottom: 0;    
-    background-color: #212529;  
+    border: 1px solid #dee2e6; 
     height: 100%;
     border-radius: 5px;    
     min-width: 200px;
@@ -500,16 +500,24 @@ display: flex;
   
 }
 
+.fixtures-header-img:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    border: none;
+
+}
+
 .yellow{
     background-color: #FFE867;
     color: #212529;
+    border: none;
 }
 
 .joffy{
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: -60px;
+    margin-bottom: -120px;
     min-width: 330px;
    
 }
@@ -518,6 +526,7 @@ display: flex;
     position: absolute;
     margin-top: 15px;
     margin-left: 25px;
+    font-size: 60px;
 }
 
 /* Players */
