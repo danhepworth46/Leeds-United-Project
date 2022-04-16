@@ -32,7 +32,7 @@ padding: 0;
 .navbar-container{
     background-color: white;
     padding: 0;
-    /* box-shadow: 0 5px 15px rgb(0 0 0 / 5%); */
+    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
 }
 
 .navbar-nav{
@@ -91,6 +91,7 @@ padding: 0;
     background-image: url(/Images/Untitled.jpg);
 }
 
+
 .vid-container{
     margin: 0;
 }
@@ -118,13 +119,28 @@ padding: 0;
     color: white;
 }
 
+.jumbotron-md-1{
+    background-color: #FFE867;
+}
+
+.jumbotron-md-2{
+    background-color: #0468EB;
+}
+
 .callup-btn{
     width: 100px;
 }
 
 .headlines-btn{
     width: 100px;
+    border: 1px solid #212529;
+    color: #212529;
+}
 
+.headlines-btn:hover{
+    background-color: #212529;
+    color: white;
+    border: 1px solid #212529;
 }
 
 .callup-btn:hover{
@@ -137,296 +153,6 @@ padding: 0;
     width: 85%;
     
 }
-
-/* .home{
-background-color: white;
-
-}
-
-.news-and-img-wrapper{
-    height: 100%;
-    overflow-x: hidden;
-    padding: 3% 5% 4% 5%;
-}
-
-.news-container{
-    --bs-gutter-x: 0;
-    padding-right: 1%;
-    padding-bottom: 0;
-    height: 100%;
-}
-
-.row{
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
-
-.news-wrapper{
-    background-color: #FFE867;
-    border-top-left-radius: 5px;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-    
-}
-
-
-.news{
-    font-size: 150px;
-    font-family: 'Abril Fatface';
-    background-color: #FFE867;
-    margin: 50px 0 0 0;
-    color: #212529;
-    width: 100%;
-    padding: 0;
-    line-height: 1;
-    transition: transform 1s ease-out;
-}
-
-.news-wrapper:hover .news{
-    transform: scale(0.6);
-}
-
-.news-wrapper:hover{
-    background-color: #FFE867;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
-}
-
-.news-wrapper:hover .news{
-    color: #212529;
-}
-
-.news-wrapper:hover .united-text{
-    color: #FFE867
-}
-
-.news-wrapper:hover .lufc{
-    color: #212529;
-}
-
-
-.vid-container{
-    padding: 0;
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-
-}
-
-.vid{
-    width: 100%;
-    padding-bottom: 0;
-    margin: 0;
-    height: 100%;
-    border-bottom-left-radius: 5px;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
-}
-
-.vid:hover{
-    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
-}
-
-.hide{
-    display: none;
-}
-
-.news-article-wrapper{
-    background-color: white;
-    border-top-right-radius: 5px; 
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
-}
-
-.analyist-text{
-    display: none;
-}
-
-
-.news-article-wrapper:hover .the-analyist{
-    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
-   
-}
-
-.analyist-div{
---bs-gutter-x: 0; 
-height: 100%;
-width: 100%;
-}
-
-.the-analyist{
-width: 100%;
-border-top-right-radius: 5px;
-height: 100%;
-}
-
-
-
-.preview-wrapper{
-    border-bottom-right-radius: 5px;
-    padding: 10% 0 12.3% 0;
-    overflow: hidden;
-    background-color: #212529;
-    color: white;
-    height: 100%;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-    
-   
-}
-
-.preview{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    margin-left: 5%;
-   text-decoration: none;
-    list-style: none;
-   color: white;
-   height: 100%;
-
-}
-
-.liverpool{
-    color: white;
-    font-size: 20px;
-    padding: 0 0 2% 5%;
-    font-family: 'Roboto Condensed', sans-serif;
-   
-}
-
-.preview-wrapper:hover{
-    color: white;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
-
-}
-
-.preview-wrapper:hover .preview{
-    color: white;
-}
-
-
-.preview-wrapper:hover .liverpool{
-    color: #DD3E3E;
-}
-
-.head-img-container{
-height: 100%;
-align-items: center;
-
-}
-
-.ladies{
-    padding: 5% 0;
-}
-
-.home-img-text{
-display: none;
-}
-
-.head-img-container:hover .home-img-text{
-display: block;
-position: absolute;
-color: white;
-font-size: 200px;
-font-family: 'Reenie Beanie';
-font-weight: 900;
-text-transform: uppercase;
-width: 100px;
-}
-
-.home-img{
-    width: 100%;
-    border-radius: 5px;
-    height: 100%;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-}
-
-.leeds-badge-hidden{
-    display: none;
-}
-
-.bamford-title{
-    display: none;  
-
-}
-
-.bamford-callup{
-display: none;   
-
-} */
-
-/* News Wrapper Active */
-
-/* .fa-times{
-    font-size: 50px;
-   padding-bottom: 20px;
-   padding-top: 10px;
-   justify-content: center;
-   
-}
-
-.new-badge-styles{
-    display: inline-block;
-    width: 50px;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-
-
-
-.new-lufc-styles{
-    font-size: 16px;
-    color: #212529;
-    text-transform: uppercase;
-    width: 100%;
-    display: inline-block;
-  
-}
-
-.new-news-styles{
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding-left: 5px;
-}
-
-.new-wrapper-styles {
-    padding: 50px 400px 100px 400px;
-    background: white;
-    color: #212529;
-    justify-content: center;
-    text-align: center;
-    margin: 10px 0 0 0;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-}
-
-.new-callup-styles{
-    visibility: visible;
-    font-size: 11px;
-    font-family: 'Noto Serif Display', serif;
-    padding-top: 10px;
-    text-align: justify;
-}
-
-.new-bamTitle-styles{
-    visibility: visible;
-    font-family: Abril Fatface;
-    font-size: 30px;
-   padding-bottom: 20px;;
-}
-
-.new-home-styles{
-    background-color: white;
-    opacity: 1;
-    background: repeating-linear-gradient( 45deg, #FFE867, #FFE867 9.5px, white 9.5px, white 47.5px );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-.new-news-container{
-    padding: 0;
-} */
 
 /* Headlines-Section */
 
@@ -507,9 +233,9 @@ display: none;
 /* Games and Fixtures */
 
 
-.background2{
+.analysis-section-background{
     background: white;
-    /* padding: 0 5%; */
+
 }
 
 .scores{
@@ -583,7 +309,6 @@ display: none;
 
 #kits-background{
     background-color: white;
-    padding-bottom: 5%;
 }
 
 
@@ -641,8 +366,8 @@ display: flex;
     font-size: 60px;
     background: white;
     margin-top: 30px;
-    margin-right: 73px;
-    margin-left: 70px;
+    margin-right: 45px;
+    margin-left: 60px;
     text-transform: uppercase;
 }
 
@@ -674,82 +399,20 @@ display: flex;
 /* Fixtures and Tickets */
 
 #fixtures-and-tickets-section{
-    padding: 2% 5% 4% 5%;
+    padding: 4% 5% 4% 5%;
  
 }
 
-.check{
-    border-radius: 5px;
-    background-color: white;
-}
-
-.check-1{
-    margin-bottom: 15px;
-    border: #dee2e6 solid 1px;
-    border-radius: 5px;    
-    transition: transform 0.3 ease-out;
-    min-height: 222px;
-}
-
-.check-1:hover{
-    transform: scale(1.01);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
-}
-
-.check-2{
-    transition: transform 0.3 ease-out;
-    background-color: #212529;
-    color: white;
-    display: flex;
-    padding: 24px 0;
-}
-
-.check-2:hover{
-    transform: scale(1.01);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
-}
-
-.fixtures-img{
-    width: 100%;
-    border-radius: 5px;
-
-}
-
-.fixtures-img:hover{
-    transform: scale(1.01);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-}
-
-.u23-title{
-    font-size: 200px;
-    overflow: hidden;
-    align-items: center;
-}
-
-.check-lg{
-    padding-left: 15px;
-    transition: transform 0.3 ease-out;
-    display: flex;
-}
-
-.check-lg:hover .upcoming-games-img{
-    transform: scale(1.01);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
-}
-
-.upcoming-games-img{
-    width: 100%;
-    border-radius: 5px;
+.sq-container{
+    margin: 0;
+    padding: 0;
 }
 
 .sq{
     padding: 45px 15px 45px 15px;
-    background-color: #212529;
+    background-color: #0468EB;
     color: white;
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 0;
     border-radius: 5px;
     transition: transform 0.3 ease-out;
     overflow: hidden;
@@ -769,29 +432,30 @@ display: flex;
 .list-group{
    font-size: 14px;
     text-align: left;
-    margin: 0 0 3% 15px;
+    margin: 0 0 3% 0;
     border-radius: 5px;
-    width: 95%;
+    width: 100%;
+    padding: 0;
 }
 
 .tix-btn{
     border-radius: 5px;
-    margin-left: 15px;
     margin-top: 5px;
-    width: 95%;
+    width: 100%;
 }
 
 .buy-tickets-btn{
     background-color: #FFE867;
     color: #212529;
     border: solid 1px #FFE867;
-    width: 95%;
+    width: 100%;
 }
 
 .tickets-link{
     text-decoration: none;
     list-style: none;
     color: #212529;
+    padding: 0;
 }
 
 .tickets-link:hover{
@@ -799,11 +463,68 @@ display: flex;
 }
 
 
+.fixtures-container{
+    display: flex;
+    padding-left: 15px;
+    min-height: 100%;
+    margin-right: -12px;
+}
+
+.fixtures-header{
+    color: white;
+    margin-bottom: 0;    
+    background-color: #212529;  
+    height: 100%;
+    border-radius: 5px;    
+    min-width: 200px;
+    transition: transform 0.3 ease-out;
+    padding: 15px;
+    
+}
+
+.fixtures-header:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+
+}
+
+.fixtures-header-img{
+    color: white;
+    margin-bottom: 0;    
+    background-color: #212529;  
+    height: 100%;
+    border-radius: 5px;    
+    min-width: 200px;
+    transition: transform 0.3 ease-out; 
+    overflow: hidden;
+  
+}
+
+.yellow{
+    background-color: #FFE867;
+    color: #212529;
+}
+
+.joffy{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -60px;
+    min-width: 330px;
+   
+}
+
+.joffy-text{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+}
 
 /* Players */
 
 .player-card{
     transition: transform 0.3 ease-out;
+    padding: 0;
 }
 
 .player-card:hover{
@@ -818,105 +539,28 @@ display: flex;
     padding-left: 1%;
 }
 
-/* hr{
-    margin: 5px 0 10px;
+.player-card3{
+    padding-right: 1%;
 }
 
-
-
-.team-title{
-    font-size: 80px;
-    display: inline-block;
-
-    padding: 0;
-    margin-bottom: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    line-height: 0.8;
-}
-
-.team{
-    padding-bottom: 20px;
+.player-card4{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
 }
 
 .players-btn{
-    font-family: 'Roboto Condensed', sans-serif;
-    align-items: center;
-    margin: 22px 0 0 0;
-    float: right;
-    background: white;
-    width: 150px;
+    background-color: #0468EB;
+    color: white;
+    border: solid 1px #0468EB;
 }
 
-
-.players{
-    padding-top: 50px;
-    overflow-x: scroll;
-    display: flex;
-    margin: auto 0;
-}
-
-.players-container{
-    padding: 0;
-}
-
-.player-text-small{
-    font-size: 80px;
-}
-
-.item{
-    font-family: 'Roboto Condensed', sans-serif;  
-    padding: 4% 0 5% 0;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border-radius: 5px;
-    margin: 0;
-
-}
-
-.player-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3%;
-    border-radius: 5px;
-    padding: 0 5%;
-    
-    
-}
-
-.player-profile{
-    border-radius: 5px;
-    height: 320px;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-}
-
-.player-para{
-    font-family: "Noto Serif Display";
-    font-size: 14px;
-    width: 450px;  
-    text-align: justify;
-}
-
-.player-number{
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-.player-link{
-    text-decoration: none;
-    list-style: none;
+.players-btn:hover{
+    background-color: #FFE867;
     color: #212529;
-    padding: 0;
-
+    border: solid 1px #FFE867;
 }
-
-.player-link:hover{
-    color: #212529;
-} */
-
 
 /* Newsletter Section */
 
@@ -931,17 +575,24 @@ display: flex;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    
+    padding: 0;
 }
 
+.newsletter-row{
+    padding: 0;
+}
 
 .newsletter{
     text-decoration: none;
     list-style: none;
     color: #212529;
     border-radius: 5px;
+    padding: 0;
 }
 
+.newsletter-text-wrapper{
+    padding: 0;
+}
 
 .newsletter-title{
     font-size: 60px;
@@ -951,6 +602,10 @@ display: flex;
     color: #212529;
     width: 90%;
     
+}
+
+.newsletter-img-wrapper{
+    padding: 0;
 }
 
 .newsletter-img{
@@ -1013,10 +668,6 @@ display: flex;
         padding: 0 15%;
     }
 
-    /* .preview-wrapper{
-        padding: 10%;
-    } */
-
     .news-container{
         padding-right: 0;
         padding-bottom: 5%;
@@ -1029,15 +680,6 @@ display: flex;
     .vid{
         width: 100%;
     }
-
-    /* .preview{
-        margin: 0;
-    }
-
-    .liverpool{
-        padding: 0;
-    } */
-
 }
 
 /* 1199px */
@@ -1057,10 +699,6 @@ display: flex;
 
 @media (max-width: 1354px) {
 
-    /* .liverpool{
-        font-size: 50px;
-    } */
-
     .tix-container:hover 
     .u23-text-styles{
         font-size: 60px;
@@ -1073,10 +711,6 @@ display: flex;
     .lufc{
         font-size: 20px;
     }
-
-   /* .preview{
-        font-size: 20px;
-    } */
 
     .player-profile{
         margin-left: -100px;
@@ -1120,9 +754,7 @@ display: flex;
     
     }
 
-    .sq{
-        padding: 5px;
-    }
+
 }
 
 /* 991px col-lg*/
@@ -1164,14 +796,6 @@ display: flex;
     .lufc{
         margin: 10%;
     }
-
-    /* .preview-wrapper{
-        padding-left: 5%;
-    }
-
-    .liverpool{
-        font-size: 40px;
-    } */
 
     .vid{
         width: 60%;
@@ -1229,31 +853,6 @@ display: flex;
         font-size: 120px;
         line-height: 0.8;
     }
-    
-    /* .preview-wrapper{
-        border-bottom-right-radius: 0;
-        padding: 5%;
-        
-        
-    } */
-
-    /* .preview{
-        font-size: 100px;
-        line-height: 1;
-    }
-
-    .liverpool{
-        font-size: 100px;
-    } */
-    
-    /* .vid{
-        border-bottom-left-radius: 0;
-        height: 400px;
-    }
-
-    .vid-container{
-        margin-bottom: -7px;
-    } */
     
     .home-img{
         border-radius: 0;
@@ -1385,15 +984,6 @@ display: flex;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
-
-    /* .preview-wrapper{
-        border-bottom-right-radius: 0;
-    } */
-
-    /* .vid{
-        border-bottom-left-radius: 0;
-        height: 400px;
-    } */
 
     .head{
         border-radius: 0;
