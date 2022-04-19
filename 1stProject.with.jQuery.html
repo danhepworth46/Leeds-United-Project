@@ -44,6 +44,12 @@
     <nav class="navbar fixed-top navbar-light bg-light">
         <div class="navbar-container container-fluid">
             <a class="navbar-brand mb-0 h1" href="#home-section"><img class="navbar-icon" src="https://iconape.com/wp-content/files/ts/322815/png/322815.png" alt="Leeds retro badge">LUFC</a>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-black">
+        <div class="navbar-container container-fluid container-black">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -60,10 +66,7 @@
                     <li class="nav-item"><a class="nav-link" style="color:white;" href="#history">History</a></li>
     
                 </ul>
-                <!-- <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-bg btn-outline-dark" type="submit">Search</button>
-          </form> -->
+           
             </div>
         </div> 
     </nav>
@@ -108,7 +111,7 @@
 <section id="headlines-section">
             <div class="headlines-container row">
                 <div class="headlines col-lg-4 col-md-6">
-                    <img class="head-img ladies" src="/Images/bartup_banner.jpg">
+                    <img class="head-img ladies outline" src="/Images/bartup_banner.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Watch Leeds United Ladies</h3>
                         <p>See highlights of the Durham Ladies (Away).</p>
@@ -124,7 +127,7 @@
                 </div>
 
                 <div class="headlines col-lg-4 col-md-6">
-                    <img class="head-img" src="/Images/raph-edit2.jpg">
+                    <img class="head-img outline" src="/Images/raph-edit2.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Player Reaction</h4>
                         <p>Patrick Bamford speaks after the game.</p>
@@ -132,7 +135,7 @@
                 </div>
 
                 <div class="headlines col-lg-4 col-md-6">
-                    <img class="head-img" src="/Images/match-preview.jpg">
+                    <img class="head-img outline" src="/Images/match-preview.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">The Match Preview</h4>
                         <p>We preview the upcoming game against Liverpool.</p>
@@ -140,7 +143,7 @@
                 </div>
 
                 <div class="headlines col-lg-4 col-md-6">
-                    <img class="head-img" src="/Images/news.jpg">
+                    <img class="head-img outline" src="/Images/news.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Latest Leeds United News</h4>
                         <p>Looking at the latest news in Leeds.</p>
@@ -148,7 +151,7 @@
                 </div>
 
                 <div class="headlines col-lg-4 col-md-6">
-                    <img class="head-img" src="/Images/match-report.jpg">
+                    <img class="head-img outline" src="/Images/match-report.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">The Match Report</h4>
                         <p>We report on the Manchester United match.</p>
@@ -256,7 +259,7 @@
 </section>
 
 <section id="fixtures-and-tickets-section">
-
+    <div class="fixtures-tix-container">
         <div class="row">
 
             <div class="col-xxl-3 col-lg-3 col-md-3">
@@ -283,11 +286,11 @@
             <div class="fixtures-box col-xxl-9 col-lg-9 col-md-9">
                 <div class="fixtures-container">
                 <div class="row row-cols-3 g-4">
-                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header yellow">Buy tickets for the Southampton game!</h1></div>
-                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header">Watch our u23's play!</h1></div>
+                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header yellow">Full Leeds Ladies fixture list here!</h1></div>
+                    <div class="col fixtures-header-wrapper"><div class="fixtures-header-img"><h1 class="volley-text">Watch Leeds Ladies!</h1><img class="volley" src="/Images/volley.png"></div></div>
                     <div class="col fixtures-header-wrapper"><h1 class="fixtures-header yellow">Full U23 fixture list here</h1></div>
-                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header">Watch our u23's play!</h1></div>
-                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header yellow">Buy tickets for the Southampton game!</h1></div>
+                    <div class="col fixtures-header-wrapper"><div class="fixtures-header-img"><h1 class="harrison-text">Watch the 1st Team!</h1><img class="harrison" src="/Images/Jack-Harrison-tickets.png"></div></div>
+                    <div class="col fixtures-header-wrapper"><h1 class="fixtures-header black">Buy tickets for the Southampton game!</h1></div>
                     <div class="col fixtures-header-wrapper"><div class="fixtures-header-img"><h1 class="joffy-text">Watch our U23's</h1><img class="joffy" src="/Images/Joffy.png"></div></div>
                     
                 </div> 
@@ -295,7 +298,7 @@
             </div>
 
         </div>
-   
+   </div>
 </section>
 
 <section id="team-section"> 
@@ -359,19 +362,15 @@
 
 <section id="newsletter-section">
     <div class="newsletter-container">
-        <div class="row newsletter-row">
-            <div class="col-lg-6 newsletter-img-wrapper">
-                <img class="newsletter-img" src="Images/Jack-Harrison.jpg">
-            </div>
-            <div class="col-lg-6 newsletter-text-wrapper">
-                <h1 class="newsletter-title"><a href="" target="_blank" class="newsletter"> LUFC Newsletter</a></h1>
+           <div class="newsletter-content-wrapper row">  
+            <h1 class="newsletter-title"><a href="" target="_blank" class="newsletter"> LUFC Newsletter</a></h1>
                 <p class="newsletter-text">Join the Leeds United Mailing List and receive the latest news from inside Elland Road! Just enter your email address here.</p>
-                <div class="email-wrapper">
+                <div class="email-wrapper col-lg-6">
                     <input type="email" id="email" class="email-submit" placeholder="me@email.com">
                     <button class="email-submit-button btn btn-bg btn-dark" type="submit">Submit</button>
                 </div>
-            </div>
-        </div>
+    
+      </div>   
     </div>
 </section>
 

@@ -19,7 +19,13 @@ body{
 /* Navbar Section */
 
 .navbar{
-padding: 0;
+    padding: 0;
+}
+
+.navbar-icon{
+    width: 45px;
+    margin-right: 5px;
+    margin-top: -5%;
 }
 
 .navbar-collapse{
@@ -29,10 +35,15 @@ padding: 0;
   
 }
 
+.navbar-black{
+    margin-top: 70px;
+}
+
 .navbar-container{
     background-color: white;
     padding: 0;
     box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+    margin: 0;
 }
 
 .navbar-nav{
@@ -41,17 +52,16 @@ padding: 0;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 
 .nav-item{
-    padding-left: 5%;
-
+    padding: 2px 20px 2px 20px;
 }
 
 .navbar-brand{
     font-size: 50px;
-   padding-left: 5%;
+    padding-left: 5%;
     font-family: 'Roboto Condensed', sans-serif;
     
 }
@@ -60,30 +70,23 @@ padding: 0;
    font-size: 20px;
 }
 
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,0);
-    margin-right: 5%;
-    border: 0;
+.navbar-toggler{
+  margin-left: 90%;
 }
 
-/* .d-flex{
-    padding: 15px;
-    width: 92.5%;
-    margin-left: 4%;
-    font-family: 'Roboto Condensed', sans-serif;
-} */
+.navbar-light .navbar-toggler {
+    border: none;
+}
 
-
-.navbar-icon{
-    width: 45px;
-    margin-right: 5px;
-    margin-top: -5%;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* Home Section */
 
 #home-section{
     padding-bottom: 3%;
+    padding-top: 4%;
 }
 
 
@@ -203,7 +206,6 @@ padding: 0;
     border-radius: 5px;
     width: auto;
     height: 100%;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 
 }
  
@@ -219,7 +221,7 @@ padding: 0;
 .head-img:hover{
     transform: scale(1.01);
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
+    border: none;
 }
 
 
@@ -471,7 +473,7 @@ display: flex;
 }
 
 .fixtures-header{
-    color: white;
+    color: #212529;
     margin-bottom: 0;    
     border: 1px solid #dee2e6; 
     height: 100%;
@@ -513,20 +515,50 @@ display: flex;
     border: none;
 }
 
+.black{
+    background-color: #212529;
+    color: white;
+    border: none;
+}
+
+.volley{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: -120px;
+    min-width: 330px;
+    margin-bottom: -100px;
+}
+
+.volley-text{
+    padding: 15px;
+}
+
+.harrison{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: -120px;
+    min-width: 330px;
+    margin-bottom: -100px;
+}
+
+.harrison-text{
+    padding: 15px;
+}
+
 .joffy{
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: -120px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     min-width: 330px;
    
 }
 
 .joffy-text{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 25px;
-    font-size: 60px;
+    padding: 15px;
 }
 
 /* Players */
@@ -574,32 +606,27 @@ display: flex;
 /* Newsletter Section */
 
 #newsletter-section{
-    margin: 2.5% 5% 5% 5%;
+    margin: 2.5% 0% 0% 0%;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-    border-radius: 5px;
 
 }
 
 .newsletter-container{
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
     padding: 0;
+    background-image: url(/Images/Untitled-md.jpg);
+
 }
 
-.newsletter-row{
-    padding: 0;
+.newsletter-content-wrapper{
+    padding: 5%;
 }
 
 .newsletter{
     text-decoration: none;
     list-style: none;
     color: #212529;
-    border-radius: 5px;
-    padding: 0;
-}
-
-.newsletter-text-wrapper{
     padding: 0;
 }
 
@@ -617,26 +644,13 @@ display: flex;
     padding: 0;
 }
 
-.newsletter-img{
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-   padding-right: 2%;
-
-
-}
-
 .newsletter-text-wrapper{
     padding-left: 2%;
     padding-top: 5%;
     
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
-.email-wrapper{
-    padding-top: 5%;
-}
+
 
 .email-submit-button{
     margin-left: 1%;
@@ -689,6 +703,14 @@ display: flex;
     .vid{
         width: 100%;
     }
+
+}
+
+@media (min-width: 1400px){
+    .fixtures-tix-container{
+        max-width: 1320px;
+    }
+
 }
 
 /* 1199px */
