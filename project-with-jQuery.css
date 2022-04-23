@@ -71,7 +71,7 @@ body{
 }
 
 .navbar-toggler{
-  margin-left: 90%;
+    margin-right: 15px;
 }
 
 .navbar-light .navbar-toggler {
@@ -85,8 +85,7 @@ body{
 /* Home Section */
 
 #home-section{
-    padding-bottom: 3%;
-    padding-top: 4%;
+    padding-top: 40px;
 }
 
 
@@ -167,7 +166,7 @@ body{
 }
 
 .headlines-container{
-    padding: 0% 4% 1% 4%;
+    padding: 0% 4% 0% 4%;
 }
 
 .headlines{
@@ -369,7 +368,7 @@ display: flex;
     background: white;
     margin-top: 30px;
     margin-right: 45px;
-    margin-left: 60px;
+    margin-left: 75px;
     text-transform: uppercase;
 }
 
@@ -381,7 +380,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 15%;
+    margin-left: 75px;
     border-radius: 5px;
     background-color: #FFE867;
     color: #212529;
@@ -395,7 +394,7 @@ display: flex;
     align-items: center;
     width: 50%;
     margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 75px;
 }
 
 /* Fixtures and Tickets */
@@ -405,24 +404,78 @@ display: flex;
  
 }
 
+.fixtures-tix-container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tix-container{
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.fix-tix-row{
+    --bs-gutter-x: 0;
+}
+
+.fixtures-row{
+    --bs-gutter-x: 0;
+
+}
+
+.advert-row{
+    --bs-gutter-x: 0;
+
+}
+
+.tickets-row{
+    --bs-gutter-x: 0;
+}
+
+.fixtures-header-wrapper{
+    padding: 0;
+    margin: 0;
+}
+
+.fixtures-header{
+    min-height: 242px;
+}
+
+.fixtures-header-img{
+    min-height: 242px;
+}
+
+.fix-gutter{
+    padding-right: 0;
+}
+
+.fix-gutter-top{
+    padding-right: 0;
+    margin-top: 0.75rem;
+    
+}
+
 .sq-container{
     margin: 0;
     padding: 0;
+    height:100%;
 }
 
 .sq{
-    padding: 45px 15px 45px 15px;
+    padding: 35.5px;
+    height: 100%;
     background-color: #0468EB;
     color: white;
-    margin: 15px 0 0 0;
+    margin: 5px 0 0 0;
     border-radius: 5px;
     transition: transform 0.3 ease-out;
-    overflow: hidden;
+    border: none;
+    text-align: center;
 }
 
 .tickets-onsale-title{
     font-size: 40px;
-    
 }
 
 .sq:hover{
@@ -434,9 +487,7 @@ display: flex;
 .list-group{
    font-size: 14px;
     text-align: left;
-    margin: 0 0 3% 0;
     border-radius: 5px;
-    width: 100%;
     padding: 0;
 }
 
@@ -467,10 +518,10 @@ display: flex;
 
 .fixtures-container{
     display: flex;
-    padding-left: 15px;
     min-height: 100%;
-    margin-right: -12px;
 }
+
+
 
 .fixtures-header{
     color: #212529;
@@ -563,6 +614,10 @@ display: flex;
 
 /* Players */
 
+.team-row{
+    --bs-gutter-x: 0;
+}
+
 .player-card{
     transition: transform 0.3 ease-out;
     padding: 0;
@@ -573,35 +628,30 @@ display: flex;
 }
 
 .player-card1{
-    padding-right: 1%;
+    padding-right: 7px;
 }
 
 .player-card2{
-    padding-left: 1%;
+    padding-left: 7px;
 }
 
 .player-card3{
-    padding-right: 1%;
+    padding-right: 7px;
 }
 
 .player-card4{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 100px;
+    padding-left: 7px;
 }
+
 
 .players-btn{
-    background-color: #0468EB;
-    color: white;
-    border: solid 1px #0468EB;
+    background-color: white;
+    color: #212529;
+    border: solid 1px white;
+    height: 207px;
+    font-size: 50px;
 }
 
-.players-btn:hover{
-    background-color: #FFE867;
-    color: #212529;
-    border: solid 1px #FFE867;
-}
 
 /* Newsletter Section */
 
@@ -704,14 +754,9 @@ display: flex;
         width: 100%;
     }
 
-}
-
-@media (min-width: 1400px){
-    .fixtures-tix-container{
-        max-width: 1320px;
-    }
 
 }
+
 
 /* 1199px */
 
@@ -724,15 +769,32 @@ display: flex;
     .jumbotron-lg{
         background-image: url(/Images/Untitled-md.jpg);
     }
-}
 
-/* 1354px */
+    .fixtures-row{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
 
-@media (max-width: 1354px) {
+    .fix-tix-col-1{
+        padding-right: 0.35rem;
+    }
 
-    .tix-container:hover 
-    .u23-text-styles{
-        font-size: 60px;
+
+    .fix-tix-col-2{
+        padding-left: 0.35rem;
+    }
+
+    .gutter-1200{
+        padding-right: 0.75rem;
+    }
+
+    .buy-tickets-btn{
+        margin: 0;
+    }
+
+    .sq{
+        padding: 43.5px;
     }
 }
 
@@ -779,18 +841,17 @@ display: flex;
         padding: 5px 0;
     }
 
-    .tickets-onsale-title{
-        font-size: 18px;
-        text-align: center;
-    
-    }
-
 
 }
 
 /* 991px col-lg*/
 
+
 @media (max-width: 991px){
+    #home-section{
+        padding-top: 0;
+    }
+    
     .jumbotron-lg{
         background-image: url(/Images/Untitled-tall.jpg);
     }
@@ -798,7 +859,69 @@ display: flex;
     .head-img-vid{
         top: -8px;
     }
-    
+
+    .fixtures-header{
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .fixtures-header-img{
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .tickets-onsale-title{
+        font-size: 30px;
+    }
+
+    .fix-tix-col-1{
+        padding-right: 0.35rem;
+    }
+
+    .sq{
+        padding: 49.5px 15px;
+    }
+
+    .gutter-1200{
+        padding-right: 0;
+    }
+
+    .gutter-991-right{
+        padding-right: 0.75rem;
+    }
+
+    .gutter-991-top{
+        padding-top: 0.75rem;
+    }
+
+    .gutter-1{
+        padding-right: 0.4rem;
+    }
+
+    .gutter-2{
+        padding-left: 0.4rem;
+    }
+
+    .gutter-3{
+        padding-right: 0.4rem;
+    }
+
+    .gutter-4{
+        padding-left: 0.4rem;
+    }
+
+    .gutter-5{
+        padding-right: 0.4rem;
+    }
+
+    .gutter-6{
+        padding-left: 0.4rem;
+    }
+
+    .tickets-row{
+        padding-left: 0;
+    }
+
     .tix-on-sale{
         border-radius: 5px;
         
@@ -809,12 +932,12 @@ display: flex;
         margin-top: 5%;
     }
 
-    .tix-container:hover 
-    .u23-text-styles{
-       margin-top: 45%;
-        margin-left: 15%;
-        font-size: 80px;
+    .players-btn{
+        
+        height: 187.5px;
+        font-size: 30px;
     }
+
 
     .newsletter-text{
         font-size: 12px;
@@ -841,6 +964,21 @@ display: flex;
     .head-img-vid{
         top: -10px;
     }
+
+}
+
+/* 800px  */
+
+@media (max-width: 804px){
+    .tickets-onsale-title{
+        font-size: 32px;
+    }
+
+    .sq{
+        padding: 49.5px 15px;
+    }
+
+
 }
 
 /* 767px col-md */
@@ -848,6 +986,10 @@ display: flex;
 @media (max-width: 767px) {
      .home{
         padding: 0;
+    }
+
+    #home-section{
+        padding-bottom: 0;
     }
     
     .vid{
@@ -898,12 +1040,8 @@ display: flex;
         font-size: 200px;
     }
 
-    .headlines-container{
-        margin-top: 5%;
-    }
-
     .headlines{
-        padding: 0;
+        padding: 15px 30px 15px 30px;
     }
 
     .leeds-ladies{
@@ -916,10 +1054,6 @@ display: flex;
 
     .bamford-interview{
         border-radius: 0;
-    }
-
-    .tix-container{
-        margin-top: 5%;
     }
 
     .news-and-img-wrapper{
@@ -949,6 +1083,36 @@ display: flex;
         margin-top: 0;
     }
 
+    .fix-tix-col-1{
+        padding-right: 0.35rem;
+        padding-left: 0.75rem;
+    }
+
+
+    .fix-tix-col-2{
+        padding-left: 0.35rem;
+    }
+
+    .fixtures-row{
+        padding-left: 0;
+    }
+
+    .tickets-row{
+        padding-left: 0;
+    }
+
+    .tickets-onsale-title{
+        font-size: 25px;
+    }
+
+    .sq{
+        padding: 52.5px 15px;
+    }
+
+    .tix-btn{
+        margin-bottom: 0;
+    }
+
     .fixtures{
         border-radius: 0;
         margin-bottom: 10%;
@@ -959,11 +1123,81 @@ display: flex;
         
     }
 
-    .tix-container:hover 
-    .u23-text-styles{
-        margin-top: 45%;
-        margin-left: 15%;
-        font-size: 80px;
+    .fixtures-header-img{
+        min-height: 300px;
+        max-height: 300px;
+        max-width: 540px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+     
+    }
+
+    .yellow{
+        min-height: 300px;
+        max-height: 300px;  
+        max-width: 540px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .black{
+        min-height: 300px;
+        max-height: 300px;
+        max-width: 540px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .gutter-991-right{
+        padding-right: 0;
+    }
+
+    .gutter-991-top{
+        padding-top: 0.75rem;
+    }
+
+    .gutter-1{
+        padding-right: 0.75rem;
+    }
+
+    .gutter-2{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.75rem;
+    }
+
+    .gutter-3{
+        padding-right: 0.75rem;
+    }
+
+    .gutter-4{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .gutter-5{
+        padding-right: 0.75rem;
+    }
+
+    .gutter-6{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+    }
+
+    .player-card1{
+        padding-right: 0;
+    }
+    
+    .player-card2{
+        padding-left: 0;
+    }
+    
+    .player-card3{
+        padding-right: 0;
     }
 
     .player-container{
@@ -974,6 +1208,11 @@ display: flex;
     .player-profile{
         margin: 0;
        text-align: center;
+    }
+
+    .players-btn{
+        height: 152px;
+        font-size: 30px;
     }
   
 }
@@ -1034,6 +1273,40 @@ display: flex;
         padding: 0 5%;
      
     }
+
+    .list-group{
+        padding-right: 0;
+        margin-top: 50px;
+    }
+
+    .fixtures-header-img{
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .fixtures-header{
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .tickets-row{
+        padding-left: 0.36rem;
+    }
+
+    .tix-btn{
+        margin-bottom: 5px;
+        margin-top: 2px;
+    }
+
+    .buy-tickets-btn{
+        margin-top: 10px;
+    }
+
+    #team-section{
+        padding: 50px 20px 0 20px;
+   
+    }
+
 
     }
 
