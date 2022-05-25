@@ -10,7 +10,7 @@
 <link href="dist/pattern.min.css" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link href="/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
 
 <!--google fonts-->
 <!-- Serif Styles -->
@@ -44,6 +44,11 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="navbar-container container-fluid">
            <a class="navbar-brand mb-0 h1" href="#home-section"><img class="navbar-icon" src="https://iconape.com/wp-content/files/ts/322815/png/322815.png" alt="Leeds retro badge">LUFC</a>
+           <div class="nav-item nav-icons">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-table-list"></i></button>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop2"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </div>
+           
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> 
@@ -51,7 +56,7 @@
         
             
     </nav>
-
+ 
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-black">
         <div class="navbar-container container-fluid container-black">
@@ -63,17 +68,164 @@
                     <li class="nav-item"><a class="nav-link" style="color:white;" href="#fixtures-and-tickets-section">Tickets</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:white;" href="#kits-section">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:white;" href="https://video.leedsunited.com/home">LUTV</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#foundation">Foundation</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="https://www.leedsunited.com/foundation">Foundation</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:white;" href="#club">Club</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#women">Women</a></li> 
-                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#history">History</a></li>
-    
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="#fixtures-and-tickets-section">Women</a></li> 
+                    <li class="nav-item"><a class="nav-link" style="color:white;" href="https://www.rivalgames.com/play/leedsfury/tournaments">Esports</a></li>
                 </ul>
-           
             </div>
         </div> 
     </nav>
 </section>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-title-container col-12"><h2 class="offcanvas-title" id="offcanvasTopLabel"></h2><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+    <div class="offcanvas-header row">        
+
+        <h2 class="col-4 offcanvas-titles">Next Up</h2><h2 class="col-4 offcanvas-titles">League Table</h2><h2 class="col-4 offcanvas-titles">Previous Games</h2>
+        <div class="next-up-col col">
+            <div class="next-up-content">
+                <p class="hide-800">22nd May 2022</p>
+                <p>BRENTFORD</p>
+                <img class="brentford-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/1200px-Brentford_FC_crest.svg.png">
+                <p class="brentford-p hide-800">Brentford Community Stadium</p>
+            </div>
+        </div>
+        <div class="table-col col">
+            <table>
+                <tr>
+                    <td>Position</td>
+                    <td>Team</td>
+                    <td class="hide">P</td>
+                    <td class="hide">W</td>
+                    <td class="hide">D</td>
+                    <td class="hide">L</td>
+                    <td>Points</td>
+                </tr>
+                <tr class="hide"> 
+                    <td>10th</td>
+                    <td>Brighton</td>
+                    <td>37</td>
+                    <td>11</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>48</td>
+                </tr>
+                <tr class="hide">
+                    <td>11th</td>
+                    <td>Brentford</td>
+                    <td>37</td>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>17</td>
+                    <td>46</td>
+                </tr>
+                <tr class="hide">
+                    <td>12th</td>
+                    <td>Newcastle</td>
+                    <td>37</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>46</td>
+                </tr>
+                <tr class="hide">
+                    <td>13th</td>
+                    <td>Crystal Palace</td>
+                    <td>37</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>12</td>
+                    <td>45</td>
+                </tr>
+                <tr class="hide">
+                    <td>14th</td>
+                    <td>Aston Villa</td>
+                    <td>37</td>
+                    <td>13</td>
+                    <td>6</td>
+                    <td>18</td>
+                    <td>45</td>
+                </tr>
+                <tr class="hide">
+                    <td>15th</td>
+                    <td>Southampton</td>
+                    <td>37</td>
+                    <td>9</td>
+                    <td>13</td>
+                    <td>15</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>Everton</td>
+                    <td class="hide">37</td>
+                    <td class="hide">11</td>
+                    <td class="hide">6</td>
+                    <td class="hide">20</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>Burnley</td>
+                    <td class="hide">37</td>
+                    <td class="hide">7</td>
+                    <td class="hide">14</td>
+                    <td class="hide">16</td>
+                    <td>35</td>
+                </tr>
+                <tr class="leeds-table-row">
+                    <td>18th</td>
+                    <td>Leeds United</td>
+                    <td class="hide">37</td>
+                    <td class="hide">8</td>
+                    <td class="hide">11</td>
+                    <td class="hide">18</td>
+                    <td>35</td>
+                </tr>
+                <tr class="relegated-table-row">
+                    <td>19th</td>
+                    <td>Watford</td>
+                    <td class="hide">37</td>
+                    <td class="hide">6</td>
+                    <td class="hide">5</td>
+                    <td class="hide">26</td>
+                    <td>23</td>
+                </tr>
+                <tr class="relegated-table-row">
+                    <td>20th</td>
+                    <td>Norwich City</td>
+                    <td class="hide">37</td>
+                    <td class="hide">5</td>
+                    <td class="hide">7</td>
+                    <td class="hide">25</td>
+                    <td>22</td>
+                </tr>
+            </table>
+        </div>
+        <div class="previous-games-col col">
+            <p class="draw">Leeds 1 - 1 Brighton</p>
+            <p class="loss">Chelsea 3 - 0 Leeds</p>
+            <p class="loss ">Arsenal 2 - 1 Leeds</p>
+            <p class="loss hide-800">Man City 4 - 0 Leeds</p>
+            <p class="draw hide-800"> Crystal Palace 0 - 0 Leeds</p>
+        </div>        
+
+    </div>        
+
+</div>
+
+<div class="offcanvas offcanvas-top offcanvas-top2" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-title-container col-12"><h2 class="offcanvas-title" id="offcanvasTopLabel"></h2><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+        <h1 class="searchbar-header">Search it!</h1>
+        <div class="offcanvas-header">
+        <div class="search-wrapper">
+            
+            <input type="search" id="search" class="searchbar form-control" placeholder="Enter your search here...">
+            
+        </div>    
+    </div>
+</div>
 
 <section id="home-section">
     <div class="container py-4">
@@ -94,14 +246,14 @@
     
         <div class="row align-items-md-stretch">
           <div class="col-md-6 jumbotron-col">
-            <div class="h-100 p-5 rounded-3 jumbotron-md-1">
+            <div class="h-100 p-5 rounded-3 jumbotron-md-1 jumbo-1">
               <h2>Latest Headlines</h2>
               <p>All Leeds Aren't We? Stay up to date with the action. Follow the link below to see the latest headlines and Leeds United news. </p>
               <button class="btn btn-outline-light headlines-btn" type="button">Let's go!</button>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="h-100 p-5 text-white rounded-3 jumbotron-md-2">
+            <div class="h-100 p-5 text-white rounded-3 jumbotron-md-2 jumbo-2">
               <h2 class="heading-md">Bamford recieves first England call-up! </h2>
               <p>Click the link below to see the full report as we get the thoughts of Gareth Southgate, the England manager and Patrick Bamford himself.</p>
               <button class="btn btn-outline-dark callup-btn" type="button">Let's go!</button>
@@ -111,13 +263,14 @@
     </div>
 </section>
 
+
 <section id="headlines-section">
             <div class="headlines-container row">
                 <div class="headlines col-lg-4 col-md-6">
                     <img class="head-img ladies outline" src="/Images/bartup_banner.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Watch Leeds United Ladies</h3>
-                        <p>See highlights of the Durham Ladies (Away).</p>
+                        <p class="head-p">See highlights of the Durham Ladies (Away).</p>
                     </div>
                 </div>
 
@@ -125,7 +278,7 @@
                     <img class="head-img" src="/Images/raph-edit4.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Watch: Post-Match Interview</h3>
-                        <p>Marcelo Bielsa speaks following the game.</p>
+                        <p class="head-p">Marcelo Bielsa speaks following the game.</p>
                     </div>
                 </div>
 
@@ -133,7 +286,7 @@
                     <img class="head-img outline" src="/Images/raph-edit2.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Player Reaction</h4>
-                        <p>Patrick Bamford speaks after the game.</p>
+                        <p class="head-p">Patrick Bamford speaks after the game.</p>
                     </div>
                 </div>
 
@@ -141,7 +294,7 @@
                     <img class="head-img outline" src="/Images/match-preview.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">The Match Preview</h4>
-                        <p>We preview the upcoming game against Liverpool.</p>
+                        <p class="head-p">We preview the upcoming game against Liverpool.</p>
                     </div>
                 </div>
 
@@ -149,7 +302,7 @@
                     <img class="head-img outline" src="/Images/news.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">Latest Leeds United News</h4>
-                        <p>Looking at the latest news in Leeds.</p>
+                        <p class="head-p">Looking at the latest news in Leeds.</p>
                     </div>
                 </div>
 
@@ -157,9 +310,11 @@
                     <img class="head-img outline" src="/Images/match-report.jpg">
                     <div class="container-fluid headline-text-container">
                         <h4 class="headline-header-text">The Match Report</h4>
-                        <p>We report on the Manchester United match.</p>
+                        <p class="head-p">We report on the Manchester United match.</p>
                     </div>
                 </div>
+
+        
             </div>     
         </section>
 
@@ -305,85 +460,108 @@
 </section>
 
 <section id="team-section"> 
-<div class="container">
-    <div class="row mb-2 team-row">
-        <div class="col-md-6 player-card player-card1">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">1</strong>
-              <h3 class="mb-0">Illian Meslier</h3>
-              <div class="mb-1 text-muted">GK</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="https://en.wikipedia.org/wiki/Illan_Meslier" class="stretched-link">Continue reading</a>
+    <div class="team-title-container">
+        <div class="header">
+            <h3 class="team-title">The Team.</h3>
+            <div class="progress-bar">
+                <div class="progress-item active"></div>
+                <div class="progress-item"></div>
+                <div class="progress-item"></div>
+                <div class="progress-item"></div>
+                <div class="progress-item"></div>
             </div>
-            <div class="col-auto d-none d-lg-block">
-              <img width="190" height="255" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/51201838735915/meslier.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        </div>
+        
+    <div class="team-container">
+        <button class="handle left-handle">
+            <div class="text">&#8249;
+            </div>
+        </button>
+        <div class="slider">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/51201838735915/meslier.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/08581646256358/firpo.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/17551046036176/ayling.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/35872855804914/koch.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/30825074130380/cooper.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/74769581086830/llorente.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/01924331870547/dallas.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/24304799863716/struijk.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/82644460286160/forshaw.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/22515689729152/raphinha.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/154/52826217318151/dan_james.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/39707342840800/harrison.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/50158625420250/phillips.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/34440316246016/klich.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/84778185592219/shackleton.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/37856546029744/bamford.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/72915815008396/roberts.png">
+            <img src="https://dc6vmiz8c91pk.cloudfront.net/media/144/42225176959036/rodrigo.png">
+      
+        </div>
+        <button class="handle right-handle">
+            <div class="text">&#8250;
+            </div>
+        </button>
     
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 player-card player-card2">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">2</strong>
-              <h3 class="mb-0">Luke Ayling</h3>
-              <div class="mb-1 text-muted">RB</div>
-              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="https://en.wikipedia.org/wiki/Luke_Ayling" class="stretched-link">Continue reading</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <img width="190" height="255" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/17551046036176/ayling.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
-    
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 player-card player-card3">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary">3</strong>
-                <h3 class="mb-0">Junior Firpo</h3>
-                <div class="mb-1 text-muted">LB</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="https://en.wikipedia.org/wiki/Junior_Firpo" class="stretched-link">Continue reading</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                  <img width="190" height="255" src="https://dc6vmiz8c91pk.cloudfront.net/media/144/08581646256358/firpo.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
-              </div>
-            </div>
-        </div>
-            
-   
-        <div class="col-md-6 player-card player-card4">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">               
-                <button class="btn players-btn">See the full squad here</button>
-              </div>
-            
-            </div>
-        </div>
-            
-
-      </div>
    </div>
+</div>
 </section>
 
 
 <section id="newsletter-section">
     <div class="newsletter-container">
-           <div class="newsletter-content-wrapper row">  
-            <h1 class="newsletter-title"><a href="" target="_blank" class="newsletter"> LUFC Newsletter</a></h1>
+           <div class="newsletter-content-wrapper row"> 
+               <div class="col-lg-7">
+                <h1 class="newsletter-title"><a href="" target="_blank" class="newsletter"> LUFC Newsletter</a></h1>
                 <p class="newsletter-text">Join the Leeds United Mailing List and receive the latest news from inside Elland Road! Just enter your email address here.</p>
-                <div class="email-wrapper col-lg-6">
-                    <input type="email" id="email" class="email-submit" placeholder="me@email.com">
+                </div> 
+                
+                <div class="email-wrapper col-lg-5">
+                    <input type="email" id="email" class="email-submit form-control" placeholder="me@email.com">
                     <button class="email-submit-button btn btn-bg btn-dark" type="submit">Submit</button>
                 </div>
-    
-      </div>   
+            
+            </div>   
     </div>
 </section>
 
+<section id="socials-section">
+    <div class="social-container">
+        <p class="social-p">Follow us on</p>
+        <i class="fa-brands fa-facebook social-left"></i>
+        <i class="fa-brands fa-twitter social"></i>
+        <i class="fa-brands fa-instagram social-instagram"></i>
+    </div>
+    <div class="hr-margin"><hr></div>
+    <div class="sponsors-container">
+        <p class="sponsor-p">This seasons sponsors</p>
+        <i class="fa-brands fa-wordpress sponsor"></i>
+        <i class="fa-brands fa-pied-piper-square sponsor"></i>
+        <i class="fa-brands fa-digg sponsor"></i>
+        <i class="fa-brands fa-yahoo sponsor"></i>
+    </div>
+</section>
+
+<div class="hr-margin"><hr></div>
+
+<section id="footer-section">
+    <div class="footer-container">
+        <div class="footer-row row">
+            <div class="footer-column col-md-3 col-sm-3">
+                <div class="footer-wrapper"><i class="fa-solid fa-cookie footer-icon"></i><p class="footer-text">Cookie Policy</p></div>
+            </div>
+            <div class="footer-column col-md-3 col-sm-3">
+                <div class="footer-wrapper"><i class="fa-solid fa-triangle-exclamation footer-icon"></i><p class="footer-text">Privacy Notice</p></div>
+            </div>
+            <div class="footer-column col-md-3 col-sm-3">
+                  <div class="footer-wrapper"><i class="fa-solid fa-file-lines footer-icon"></i><p class="footer-text">Terms & Conditions</p></div>
+              </div>
+              <div class="footer-column col-md-3 col-sm-3">
+                <div class="footer-wrapper"><i class="fa-solid fa-copyright footer-icon"></i><p class="footer-text">©Leeds United FC</p></div>
+              </div>
+          </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

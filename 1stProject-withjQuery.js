@@ -1,61 +1,114 @@
-// jQuery
+document.addEventListener("click", e => {
+    let handle
+    if (e.target.matches(".handle")){
+       handle = e.target 
+    } 
+    else {
+       handle = e.target.closest(".handle")
+    }
+    if (handle !== null) { onHandleClick(handle)  
+    }
+}) 
 
-// News Wrapper Active
+const throttleProgressBar = throttle(() => {
+    document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
+  
+}, 250)
+window.addEventListener("resize", throttleProgressBar)
 
-$(".cross").css("display", "none");
+document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
 
-$(".news-wrapper").click(function(){
-    $(".vid-container").addClass("hide");
-    $(".news-article-wrapper").addClass("hide");
-    $(".preview-wrapper").addClass("hide");
-    $(".head-img-container").addClass("hide");
-    $(".break-container").addClass("hide");
-    $(".leeds-badge").addClass("hide");
-    $(".news-wrapper").addClass("new-wrapper-styles");
-    $(".news-wrapper").removeClass("news-wrapper");
-    $(".bamford-callup").addClass("new-callup-styles");
-    $(".bamford-callup").removeClass("bamford-callup");
-    $(".bamford-title").addClass("new-bamTitle-styles");
-    $(".bamford-title").removeClass("bamford-title");
-    $(".home").addClass("new-home-styles");
-    $(".home").removeClass("home");
-    $(".lufc").addClass("new-lufc-styles");
-    $(".lufc").removeClass("lufc");
-    $(".news").addClass("new-news-styles");
-    $(".news").removeClass("news");
-    $(".news-wrapper-column").addClass("col-lg-12");
-    $(".news-container").addClass("col-xxl-12").addClass("new-news-container");
-    $(".news-container").removeClass("news-container");
-    $(".leeds-badge-hidden").addClass("new-badge-styles");
-    $(".leeds-badge-hidden").removeClass("leeds-badge-hidden");
-    $(".cross").css("display", "block");
-})
+function calculateProgressBar(progressBar){
+    progressBar.innerHTML = ""
+    const slider = progressBar.closest(".team-title-container").querySelector(".slider")
+    const itemCount = slider.children.length
+    const itemPerScreen = parseInt(
+        getComputedStyle(slider).getPropertyValue("--item-per-screen"))
 
-// News Wrapper Hide
+    const sliderIndex = parseInt(
+        getComputedStyle(slider).getPropertyValue("--slider-index"))
 
-$(".fa-times").click(function(){
-    $(".cross").css("display", "none");
-    $(".new-wrapper-styles").addClass("news-wrapper"); 
-    $(".new-wrapper-styles").removeClass("new-wrapper-styles");
-    $(".new-callup-styles").addClass("bamford-callup");
-    $(".new-callup-styles").removeClass("new-callup-styles");
-    $(".new-bamTitle-styles").addClass("bamford-title");
-    $(".new-bamTitle-styles").removeClass("new-bamTitle-styles");
-    $(".new-home-styles").addClass("home");
-    $(".new-home-styles").removeClass("new-home-styles");
-    $(".new-lufc-styles").addClass("lufc");
-    $(".new-lufc-styles").removeClass("new-lufc-styles");
-    $(".new-news-styles").addClass("news");
-    $(".new-news-styles").removeClass("new-news-styles");
-    $(".news-wrapper-column").removeClass("col-lg-12");
-    $(".new-news-container").addClass("news-container");
-    $(".new-news-container").removeClass("col-xxl-12").removeClass("new-news-container");
-    $(".new-badge-styles").addClass("leeds-badge-hidden");
-    $(".new-badge-styles").removeClass("new-badge-styles");
-    $(".vid-container").removeClass("hide");
-    $(".news-article-wrapper").removeClass("hide");
-    $(".preview-wrapper").removeClass("hide");
-    $(".head-img-container").removeClass("hide");
-    $(".break-container").removeClass("hide");
-    $(".leeds-badge").removeClass("hide");
-});
+    const progressBarItemCount = Math.ceil(itemCount / itemPerScreen)
+
+    for (let i = 0; i < progressBarItemCount; i++){
+        const barItem = document.createElement("div")
+        barItem.classList.add("progress-item")
+        if (i === sliderIndex){
+            barItem.classList.add("active")
+        }
+        progressBar.append(barItem)
+    }
+}
+
+function onHandleClick(handle){
+    const progressBar = handle.closest(".team-title-container").querySelector(".progress-bar")
+    const slider = handle.closest(".team-container").querySelector(".slider")
+    const sliderIndex = parseInt(
+        getComputedStyle(slider).getPropertyValue("--slider-index"))
+
+    const progressBarItemCount = progressBar.children.length
+
+    if (handle.classList.contains("left-handle")){
+        if (sliderIndex - 1 < 0){
+            slider.style.setProperty("--slider-index", progressBarItemCount - 1)
+            progressBar.children[sliderIndex].classList.remove("active")
+            progressBar.children[progressBarItemCount - 1].classList.add("active")
+        }else{
+              slider.style.setProperty("--slider-index", sliderIndex - 1)
+            progressBar.children[sliderIndex].classList.remove("active")
+            progressBar.children[sliderIndex - 1].classList.add("active")
+        }
+    }
+    if (handle.classList.contains("right-handle")){
+        if (sliderIndex + 1 >= progressBarItemCount){
+            slider.style.setProperty("--slider-index", 0)
+            progressBar.children[sliderIndex].classList.remove("active")
+            progressBar.children[0].classList.add("active")
+        }else{
+            slider.style.setProperty("--slider-index", sliderIndex + 1)
+            progressBar.children[sliderIndex].classList.remove("active")
+            progressBar.children[sliderIndex + 1].classList.add("active")
+        }
+        
+    }
+} 
+
+function throttle(cb, delay = 1000) {
+    let shouldWait = false
+    let waitingArgs
+    const timeoutFunc = () => {
+      if (waitingArgs == null) {
+        shouldWait = false
+      } else {
+        cb(...waitingArgs)
+        waitingArgs = null
+        setTimeout(timeoutFunc, delay)
+      }
+    }
+  
+    return (...args) => {
+      if (shouldWait) {
+        waitingArgs = args
+        return
+      }
+  
+      cb(...args)
+      shouldWait = true
+      setTimeout(timeoutFunc, delay)
+    }
+  }
+
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar-light").style.top = "0";
+    document.querySelector(".navbar-black").style.top = "0";
+
+  } else {
+    document.querySelector(".navbar-light").style.top = "-100px";
+    document.querySelector(".navbar-black").style.top = "-70px";
+
+  }
+  prevScrollpos = currentScrollPos;
+}

@@ -35,8 +35,16 @@ body{
   
 }
 
+.navbar-light{
+    z-index: 20;
+    /* transition: top 0.8s; */
+}
+
 .navbar-black{
     margin-top: 70px;
+    z-index: 20;
+    /* transition: top 0.9s; */
+
 }
 
 .navbar-container{
@@ -63,7 +71,151 @@ body{
     font-size: 50px;
     padding-left: 5%;
     font-family: 'Roboto Condensed', sans-serif;
+    color: #212529;
+}
+
+.navbar-brand:hover{
+    color: #212529;
+
+}
+
+.offcanvas-top{
+    height: 600px;
+}
+
+.offcanvas-top2{
+    height: 250px;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.searchbar{
+    min-width: 100%;
+    width: 400px;
+}
+
+.offcanvas-header{
+    padding: 15px 5%;
+}
+
+.searchbar-header{
+    font-size: 50px;
+    font-family: Abril Fatface;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.next-up-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    height: 400px;
+    margin: 5px 15px;
+}
+
+.table-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    height: 400px;
+    margin: 5px 15px;
+
+}
+
+td{
+    font-size: 12px;
+}
+
+.previous-games-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    height: 400px;
+    margin: 5px 15px;
+}
+
+.offcanvas-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas-titles{
+    text-align: center;
+    font-family: Abril Fatface;
+    padding-bottom: 15px;
     
+}
+
+.brentford-logo{
+    width: 100px;
+}
+
+.brentford-p{
+    padding-top: 15px;
+}
+
+.loss{
+    background-color: tomato;
+}
+
+.draw{
+    background-color: #dee2e6;
+}
+
+.btn-close{
+    display: inline-block;
+    margin: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.nav-icons{
+    padding-right: 5%;
+}
+
+.fa-table-list{
+    font-size: 25px;
+    color: #212529;
+}
+
+.fa-table-list:hover{
+    transform: scale(1.1);
+}
+
+.leeds-table-row{
+    background-color: #FFE867;
+}
+
+.relegated-table-row{
+    background-color: tomato;
+}
+
+.fa-magnifying-glass{
+    font-size: 25px;
+    color: #212529;
+
+}
+
+.fa-magnifying-glass:hover{
+    transform: scale(1.1);
 }
 
 .nav-link{
@@ -82,10 +234,14 @@ body{
     box-shadow: none;
 }
 
+.btn:focus{
+    box-shadow: none;
+}
+
 /* Home Section */
 
 #home-section{
-    padding-top: 40px;
+    padding: 40px calc(5% - .75rem) 0 calc(5% - .75rem);
 }
 
 
@@ -121,11 +277,11 @@ body{
     color: white;
 }
 
-.jumbotron-md-1{
+.jumbo-1{
     background-color: #FFE867;
 }
 
-.jumbotron-md-2{
+.jumbo-2{
     background-color: #0468EB;
 }
 
@@ -166,24 +322,35 @@ body{
 }
 
 .headlines-container{
-    padding: 0% 4% 0% 4%;
+    padding: 0% 5% 0% 5%;
 }
 
 .headlines{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2% 2% 2%;
+    padding: 0 1% 2% 1%;
     transition: transform 0.3 ease-out;
     
 }
 
 .headline-text-container{
     padding-left: 1%;
+    
+
 }
 
 .headline-header-text{
     padding-top: 3%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.head-p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .head{
@@ -210,7 +377,7 @@ body{
  
 
 .ladies{
-    padding: 5% 0;
+    padding: 6% 0;
 }
 
 .outline{
@@ -310,6 +477,7 @@ body{
 
 #kits-background{
     background-color: white;
+    padding-left: 5%;
 }
 
 
@@ -368,7 +536,6 @@ display: flex;
     background: white;
     margin-top: 30px;
     margin-right: 45px;
-    margin-left: 75px;
     text-transform: uppercase;
 }
 
@@ -380,7 +547,6 @@ display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 75px;
     border-radius: 5px;
     background-color: #FFE867;
     color: #212529;
@@ -394,7 +560,6 @@ display: flex;
     align-items: center;
     width: 50%;
     margin-top: 2%;
-    margin-left: 75px;
 }
 
 /* Fixtures and Tickets */
@@ -431,6 +596,7 @@ display: flex;
 
 .tickets-row{
     --bs-gutter-x: 0;
+    padding: 0;
 }
 
 .fixtures-header-wrapper{
@@ -614,42 +780,122 @@ display: flex;
 
 /* Players */
 
-.team-row{
-    --bs-gutter-x: 0;
+#team-section{
+    padding: 0 5%;
 }
 
-.player-card{
-    transition: transform 0.3 ease-out;
-    padding: 0;
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem calc((.25rem * 2) + 3rem);
+    align-items:flex-end;
+    
 }
 
-.player-card:hover{
-    transform: scale(1.01);
+.team-title{
+    font-size: 2rem;
+    margin: 0;
+    font-family: Abril Fatface;
+
 }
 
-.player-card1{
-    padding-right: 7px;
-}
-
-.player-card2{
-    padding-left: 7px;
-}
-
-.player-card3{
-    padding-right: 7px;
-}
-
-.player-card4{
-    padding-left: 7px;
-}
-
-
-.players-btn{
+.progress-bar{
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
     background-color: white;
-    color: #212529;
-    border: solid 1px white;
-    height: 207px;
-    font-size: 50px;
+    margin-bottom: .5rem;
+}
+
+.progress-item{
+    flex: 0 0 2rem;
+    min-width: 2rem;
+    height: .5rem;
+    background-color: #dee2e6;
+}
+
+.progress-item.active{
+    background-color: #212529;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slider{
+    --item-per-screen: 5;
+    --slider-index: 0;
+    display: flex;    
+    flex-grow: 1;
+    transform: translateX(calc(var(--slider-index) * -100%));
+    margin: 0 .25rem;
+    transition: transform 250ms ease-in-out;
+}
+
+.slider > img{
+    flex: 0 0 calc(100% / var(--item-per-screen));
+    max-width: calc(100% / var(--item-per-screen));
+    padding: .25rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.handle{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 10;
+    width: 3rem;
+    margin: 0.25rem 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    cursor: pointer; 
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 150ms ease-in-out;
+    padding: 0 .5rem;
+}
+
+.left-handle{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-handle{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.handle:hover,
+.handle:focus{
+    background-color:rgba(0, 0, 0, .5);
+}
+
+.text{
+    transition: transform 150ms ease-in-out;
+
+}
+
+.handle:hover .text,
+.handle:focus .text{
+    transform: scale(1.2);
+}
+
+.team-container:hover .left-handle::after{
+    content: \2039;
+    color: white;
+}
+
+.team-container:hover .right-handle::after{
+    content: \203A;
+    color: white;
 }
 
 
@@ -657,15 +903,13 @@ display: flex;
 
 #newsletter-section{
     margin: 2.5% 0% 0% 0%;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-
 }
 
 .newsletter-container{
     display: flex;
     flex-direction: column;
     padding: 0;
-    background-image: url(/Images/Untitled-md.jpg);
+    background-image: url(/Images/Untitled.jpg);
 
 }
 
@@ -682,6 +926,11 @@ display: flex;
 
 .newsletter-title{
     font-size: 60px;
+    font-family: Abril Fatface;
+}
+
+.newsletter:hover{
+    color: #212529;
 }
 
 .newsletter-text{
@@ -700,26 +949,154 @@ display: flex;
     
 }
 
-
+.email-wrapper{
+    display: flex;
+    align-items: center;
+}
 
 .email-submit-button{
-    margin-left: 1%;
+    margin-left: 5px;
     border-radius: 5px;
-    margin-top: -2px;
-    width: 15%;
-    background-color: #FFE867;
-    color: #212529;
-    border: 1px solid #FFE867;
+    width: 100px;
+    border: 1px solid #212529;
 }
 
 .email-submit{
     height: 40px;
-    width: 50%;
-    border: solid 1px #dee2e6;
-    border-radius: 5px;
-    padding-left: 10px;
-    
+    width: 300px;
+    padding-left: 10px;   
 }
+
+/* Socials Section */
+
+
+.social-container{
+   padding: 30px 0 10px 0;
+   text-align: center;
+}
+
+.social-p{
+    text-align: center;
+    margin-left: -25px;
+    padding-bottom: 15px;
+    color: #dee2e6;
+}
+
+.sponsor-p{
+    text-align: center;
+    margin-left: -25px;
+    padding-bottom: 15px;
+    color: #dee2e6;
+}
+
+.social{
+    margin: 0 2%;
+    font-size: 40px;
+    display: inline-block;
+    color: #dee2e6
+}
+
+.social-instagram{
+    margin: 0 2%;
+    font-size: 40px;
+    display: inline-block;
+    color: #dee2e6
+}
+
+.social-left{
+    margin: 0 2% 0 0;
+    font-size: 40px;
+    color: #dee2e6
+}
+
+.social:hover{
+    color: #0468EB;
+    transform: scale(1.2);
+}
+
+.social-left:hover{
+    color: #0468EB;
+    transform: scale(1.2);
+}
+
+.social-instagram:hover{
+    color: #8a3ab9;
+    transform: scale(1.2);
+}
+
+.hr-margin{
+    padding: 0 5%;
+}
+
+hr{
+    color: #dee2e6;
+}
+
+.sponsors-container{
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.sponsor{
+    margin: 0 2%;
+    font-size: 40px;
+    display: inline-block;
+    color: #dee2e6
+}
+
+.fa-wordpress:hover{
+    color: #21759b;
+    transform: scale(1.2);
+}
+
+.fa-pied-piper-square:hover{
+    color: #08947c;
+    transform: scale(1.2);
+}
+
+.fa-digg:hover{
+    color: #ff5722;
+    transform: scale(1.2);
+}
+
+.fa-yahoo:hover{
+    color: #430297; 
+    transform: scale(1.2); 
+}
+
+
+/* Footer Section */
+
+.footer-container{
+    padding: 10px 5% 20px 5%;
+}
+
+
+.footer-wrapper{
+    background-color: white;
+    text-align: center;
+}
+
+.footer-wrapper:hover .footer-icon{
+    color: #212529;
+    transform: scale(1.2);
+}
+
+.footer-wrapper:hover .footer-text{
+    color: #212529;
+    transform: scale(1.2);
+}
+
+.footer-icon{
+    font-size: 30px;
+    color: #dee2e6;
+}
+
+.footer-text{
+    color: #dee2e6;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -771,8 +1148,8 @@ display: flex;
     }
 
     .fixtures-row{
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        /* padding-left: 0.75rem;
+        padding-right: 0.75rem; */
         padding-bottom: 0.75rem;
     }
 
@@ -789,12 +1166,51 @@ display: flex;
         padding-right: 0.75rem;
     }
 
+    .gutter-1{
+        padding-left: 0;
+    }
+
+    .gutter-4{
+        padding-left: 0;
+    }
+
+    .gutter-3{
+        padding-right: 0;
+    }
+
+    .gutter-6{
+        padding-right: 0;
+    }
+
     .buy-tickets-btn{
         margin: 0;
     }
 
     .sq{
         padding: 43.5px;
+    }
+
+    .next-up-col{
+       
+        height: 300px;
+        margin: 5px 5px;
+    }
+    
+    .table-col{
+     
+        height: 300px;
+        margin: 5px 5px;
+    
+    }
+
+    
+    .previous-games-col{
+        height: 300px;
+        margin: 5px 5px;
+    }
+
+    .offcanvas-top{
+        height: 500px;
     }
 }
 
@@ -851,6 +1267,12 @@ display: flex;
     #home-section{
         padding-top: 0;
     }
+
+    .nav-icons{
+        display: flex;
+        margin-left: auto;
+
+    }
     
     .jumbotron-lg{
         background-image: url(/Images/Untitled-tall.jpg);
@@ -896,26 +1318,33 @@ display: flex;
 
     .gutter-1{
         padding-right: 0.4rem;
+        padding-left: 0;
     }
 
     .gutter-2{
         padding-left: 0.4rem;
+        padding-right: 0;
     }
 
     .gutter-3{
         padding-right: 0.4rem;
+        padding-left: 0;
     }
 
     .gutter-4{
         padding-left: 0.4rem;
+        padding-right: 0;
     }
 
     .gutter-5{
         padding-right: 0.4rem;
+        padding-left: 0;
     }
 
     .gutter-6{
         padding-left: 0.4rem;
+        padding-right: 0;
+        
     }
 
     .tickets-row{
@@ -940,11 +1369,11 @@ display: flex;
 
 
     .newsletter-text{
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .newsletter-title{
-        font-size: 20px;
+        font-size: 36px;
     }
 
     .lufc{
@@ -956,6 +1385,9 @@ display: flex;
         height: 100%;
     }
 
+    .slider{
+        --item-per-screen: 4;
+    }
 }
 
 /* 911px col-lg*/
@@ -965,9 +1397,14 @@ display: flex;
         top: -10px;
     }
 
+    .hide{
+        display: none;
+        visibility: hidden;
+    }
+
 }
 
-/* 800px  */
+/* 804px  */
 
 @media (max-width: 804px){
     .tickets-onsale-title{
@@ -978,7 +1415,32 @@ display: flex;
         padding: 49.5px 15px;
     }
 
+    .hide-800{
+        display: none;
+        visibility: hidden;
+    }
 
+    .next-up-col{
+        height: 200px;
+        margin: 5px 5px;
+    }
+    
+    .table-col{
+     
+        height: 200px;
+        margin: 5px 5px;
+    
+    }
+
+    
+    .previous-games-col{
+        height: 200px;
+        margin: 5px 5px;
+    }
+
+    .offcanvas-top{
+        height: 400px;
+    }
 }
 
 /* 767px col-md */
@@ -1038,10 +1500,6 @@ display: flex;
 
     .head-img-container:hover .home-img-text{
         font-size: 200px;
-    }
-
-    .headlines{
-        padding: 15px 30px 15px 30px;
     }
 
     .leeds-ladies{
@@ -1151,6 +1609,10 @@ display: flex;
         margin-left: auto;
     }
 
+    .list-group{
+        padding-left: 0;
+    }
+
     .gutter-991-right{
         padding-right: 0;
     }
@@ -1159,32 +1621,21 @@ display: flex;
         padding-top: 0.75rem;
     }
 
-    .gutter-1{
-        padding-right: 0.75rem;
-    }
-
     .gutter-2{
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
         padding-top: 0.75rem;
-    }
-
-    .gutter-3{
-        padding-right: 0.75rem;
+        padding-left: 0;
     }
 
     .gutter-4{
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        padding-left: 0;
     }
 
     .gutter-5{
-        padding-right: 0.75rem;
+        padding-right: 0;
     }
 
     .gutter-6{
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        padding-left: 0;
 
     }
 
@@ -1213,6 +1664,17 @@ display: flex;
     .players-btn{
         height: 152px;
         font-size: 30px;
+    }
+
+    .slider{
+        --item-per-screen: 3;
+    }
+
+    .progress-item{
+        flex: 0 0 1rem;
+        min-width: 1rem;
+        height: .3rem;
+        background-color: #dee2e6;
     }
   
 }
@@ -1289,8 +1751,8 @@ display: flex;
         max-height: 250px;
     }
 
-    .tickets-row{
-        padding-left: 0.36rem;
+    .fix-tix-col-2{
+        padding-left: 0;
     }
 
     .tix-btn{
@@ -1307,6 +1769,25 @@ display: flex;
    
     }
 
+    .slider{
+        --item-per-screen: 2;
+    }
+
+    .progress-item{
+        flex: 0 0 .5rem;
+        min-width: .5rem;
+        height: .2rem;
+        background-color: #dee2e6;
+    }
+
+    .draw{
+        font-size: 12px;
+    }
+
+    .loss{
+        font-size: 12px;
+
+    }
 
     }
 
